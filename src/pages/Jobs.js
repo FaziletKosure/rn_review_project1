@@ -1,14 +1,16 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, Text, View} from 'react-native';
 
 const Jobs = (props) => {
+  const {selectedLanguage} = props.route.params;
   return (
-    <View>
-      <Text>JOBS</Text>
-    </View>
+    <SafeAreaView>
+      <View>
+        <Text>JOBS</Text>
+        <Text>{selectedLanguage}</Text>
+      </View>
+    </SafeAreaView>
   );
 };
 
 export {Jobs};
-
-const styles = StyleSheet.create({});

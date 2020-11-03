@@ -11,3 +11,15 @@ export const topicItem = StyleSheet.create({
     color: 'white',
   },
 });
+
+export const introduction = StyleSheet.create({
+  banner: {
+    height: Dimensions.get('window').height / 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  bannerText: {
+    fontSize: 25,
+    fontWeight: 'bold',
+  },
+});
